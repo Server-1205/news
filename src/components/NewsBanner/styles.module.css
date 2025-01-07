@@ -1,0 +1,15 @@
+﻿.banner {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.extra {
+    font-size: 12px;
+    color: #ccc;
+}
