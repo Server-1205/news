@@ -1,0 +1,23 @@
+﻿.pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.button:disabled {
+    cursor: default;
+}
