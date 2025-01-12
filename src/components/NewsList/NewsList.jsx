@@ -1,9 +1,17 @@
-﻿/* eslint-disable react/prop-types */
+﻿import withSceleton from '../../helpers/hocs/withSceleton';
 import NewsItem from '../NewsItem/NewsItem';
 import styles from './styles.module.css';
 
 const NewsList = ({ news }) => {
-  return <ul className={styles.list}>{news.map((item) => <NewsItem key={item.id} item={item}/>)}</ul>;
+  return (
+    <ul className={styles.list}>
+      {news.map((item) => (
+        <NewsItem key={item.id} item={item} />
+      ))}
+    </ul>
+  );
 };
 
-export default NewsList;
+const NewsListWithSkeleton = withSceleton(NewsList, 'item', 10);
+
+export default NewsListWithSkeleton;
