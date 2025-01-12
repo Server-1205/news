@@ -1,0 +1,27 @@
+﻿.categories {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    gap: 12px;
+    overflow-x:auto;
+    padding-bottom: 10px;
+}
+
+.item {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(128, 0, 128, 0.199);
+    color: purple;
+}
