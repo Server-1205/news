@@ -1,6 +1,16 @@
 ﻿import styles from './styles.module.css';
 
-const Categories = ({ categories, setSelectedCategory, selectedCategory }) => {
+interface Props {
+  categories: string[];
+  selectedCategory: string | null;
+  setSelectedCategory: (category: string | null) => void;
+}
+
+const Categories = ({
+  categories,
+  setSelectedCategory,
+  selectedCategory,
+}: Props) => {
   return (
     <div className={styles.categories}>
       {categories.map((category) => (
