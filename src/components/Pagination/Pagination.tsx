@@ -1,4 +1,7 @@
-﻿import styles from './style.module.css';
+﻿import { IPaginationProps } from '../../interfaces';
+import styles from './style.module.css';
+
+
 
 export const Pagination = ({
   totalPages,
@@ -6,7 +9,7 @@ export const Pagination = ({
   handlePreviousPage,
   handlePageClick,
   currentPage,
-}) => {
+}: IPaginationProps) => {
   return (
     <div className={styles.pagination}>
       <button
