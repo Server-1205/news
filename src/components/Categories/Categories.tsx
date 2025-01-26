@@ -1,4 +1,5 @@
-﻿import styles from './styles.module.css';
+﻿import { useTheme } from '../../context/ThemeContext';
+import styles from './styles.module.css';
 
 interface Props {
   categories: string[];
@@ -11,8 +12,10 @@ const Categories = ({
   setSelectedCategory,
   selectedCategory,
 }: Props) => {
+  const { isDark } = useTheme();
   return (
-    <div className={styles.categories}>
+    <div
+      className={`${styles.categories} ${isDark ? styles.dark : styles.ligth}`}>
       {categories.map((category) => (
         <button
           key={category}
