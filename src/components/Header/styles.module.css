@@ -8,6 +8,14 @@
     flex-direction: column;
 }
 
+.dark {
+    background: #000;
+}
+
+.ligth {
+    background-color: #fff;
+}
+
 .title {
     font-size: 28px;
 }
