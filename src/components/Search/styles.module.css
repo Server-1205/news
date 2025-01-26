@@ -11,3 +11,11 @@
     border: 1px solid #f2f3f5;
     border-radius: 12px;
 }
+
+.search.dark .input {
+    background: #000;
+}
+
+.search.ligth .input {
+    background: #fff;   
+}

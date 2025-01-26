@@ -25,3 +25,12 @@
     background: rgba(128, 0, 128, 0.199);
     color: purple;
 }
+
+.categories.dark {
+    background: #000;
+}
+
+.categories.dark .item {
+    background: orchid;
+    color: #fff;
+}

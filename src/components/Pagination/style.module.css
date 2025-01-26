@@ -21,3 +21,11 @@
 .button:disabled {
     cursor: default;
 }
+
+.pagination.dark .button {
+    color: #fff
+}
+
+.pagination.ligth .button {
+    color: #000;
+}
